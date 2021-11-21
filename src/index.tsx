@@ -1,10 +1,4 @@
-import * as React from 'react'
-import styles from './styles.module.css'
+import { useFunctionalProps } from './hooks/useFunctionalProps'
+import { withMemo } from './hoc/withMemo'
 
-interface Props {
-  text: string
-}
-
-export const ExampleComponent = ({ text }: Props) => {
-  return <div className={styles.test}>Example Component: {text}</div>
-}
+export { useFunctionalProps, withMemo }

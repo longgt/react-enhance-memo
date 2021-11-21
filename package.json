@@ -1,15 +1,23 @@
 {
   "name": "react-enhance-memo",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "React memo with functional props supports",
   "author": "longgt",
   "license": "MIT",
+  "keywords": [
+    "react",
+    "memo",
+    "memoized",
+    "useCallback",
+    "function",
+    "callback"
+  ],
   "repository": "longgt/react-enhance-memo",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.tsx",
   "engines": {
-    "node": ">=10"
+    "node": ">=12"
   },
   "scripts": {
     "build": "microbundle-crl --no-compress --format modern,cjs",
@@ -24,7 +32,7 @@
     "deploy": "gh-pages -d example/build"
   },
   "peerDependencies": {
-    "react": "^16.0.0"
+    "react": ">=16.8"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^4.2.4",
