@@ -19,6 +19,10 @@ By giving an unchanged version of passing callback, it prevents unnecessary re-r
 npm install --save react-enhance-memo
 ```
 
+## Demo
+
+https://longgt.github.io/react-enhance-memo/
+
 ## Usage
 
 ```tsx
