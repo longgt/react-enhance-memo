@@ -11,6 +11,15 @@ This library aims to make the work of tuning performance easier by doing the mag
 Just using the passing callback as normal props as usual, it'll do the rest of work.
 By giving an unchanged version of passing callback, it prevents unnecessary re-render in memoized child component while still maintaining the latest closure context of the given passing callback from parent component.
 
+According to https://reactjs.org/docs/render-props.html
+
+> Be careful when using Render Props with React.PureComponent
+> Using a render prop can negate the advantage that comes from using React.PureComponent if you create the function inside a render method. This is because the shallow prop comparison will always return false for new props, and each render in this case will generate a new value for the render prop.
+
+by using this libarry, there is no need to worry about the above issue anymore.
+
+Happy coding!
+
 [![NPM](https://img.shields.io/npm/v/react-enhance-memo.svg)](https://www.npmjs.com/package/react-enhance-memo) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
