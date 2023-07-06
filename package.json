@@ -1,8 +1,8 @@
 {
   "name": "react-enhance-memo",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "React memo with functional props supports",
-  "author": "longgt",
+  "author": "longgt <gtlong.hcmus@gmail.com>",
   "license": "MIT",
   "keywords": [
     "react",
