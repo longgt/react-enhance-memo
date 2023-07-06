@@ -10,9 +10,9 @@ export function withMemo<T extends React.ComponentType<any>>(
 ) {
   const MemoComponent = React.memo(component, propsAreEqual)
 
-  return (props: any) => {
+  return (props: Readonly<React.ComponentProps<T>>) => {
     const memoFunctionalProps = useFunctionalProps(props)
 
-    return <MemoComponent {...props} {...memoFunctionalProps} />
+    return <MemoComponent {...(props as any)} {...memoFunctionalProps} />
   }
 }
